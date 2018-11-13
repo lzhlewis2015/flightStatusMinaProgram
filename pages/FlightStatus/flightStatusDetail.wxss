@@ -1,0 +1,249 @@
+.container {
+  height: 100%;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  background: rgba(209, 203, 203, 0.39)
+}
+
+.navBar {
+  height: 100rpx;
+  width: 100%;
+  background: rgb(36, 153, 32);
+  /* padding: 0 40rpx; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.backArrowButton {
+  height: 50rpx;
+  width: 50rpx;
+  position: fixed;
+  left: 20rpx;
+}
+
+.horizontalText {
+  height: 50rpx;
+  width: auto;
+}
+
+/* date pick */
+.scroll-view_H{
+  width: 100%;
+  white-space: nowrap;
+}
+.scroll-view-item_H{
+  width: 150px;
+  height: 40px;
+  display: inline-block;
+  align-content: center;
+}
+
+.dateView {
+  height: 100rpx;
+  width: 100%;
+  /* padding: 0 40rpx; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.dottedImage {
+  height: 100rpx;
+  width: 1 rpx;
+  /* padding: 0 40rpx; */
+  display: flex;
+  padding-right: 1rpx;
+}
+
+
+.timeDepartedView {
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #9ad6b3
+
+}
+
+.detailText {
+  font-size: 30rpx;
+}
+
+.odView {
+  background: #FFF;
+  padding-top: 30rpx;
+  padding-bottom: 10rpx;
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.originText {
+  font-size: 60rpx;
+  position: fixed;
+  left: 40rpx;
+}
+
+.destText {
+  font-size: 60rpx;
+  position: fixed;
+  right: 40rpx;
+}
+
+.midImage {
+  height: 40rpx;
+  width: 40rpx;
+}
+
+.originDetailText {
+  font-size: 20rpx;
+  position: fixed;
+  left: 40rpx;
+}
+
+.destDetailText {
+  font-size: 20rpx;
+  position: fixed;
+  right: 40rpx;
+}
+
+.flghtNumberContainer {
+  background: #FFF;
+  padding-top: 30rpx;
+  padding-bottom: 10rpx;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  align-items: center;
+  justify-content: center;
+}
+
+.horizontalDottedView {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  height: 1rpx;
+  padding-top: 20rpx;
+  background: rgb(196, 93, 93);
+  
+}
+
+.horizontalDottedImage {
+  height: 3rpx;
+  width: auto;
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+  background: white;
+}
+
+.flightNumberView {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 20rpx;
+  padding-bottom: 30rpx;
+  background: #FFF;
+  height: auto;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+
+.flghtNumberText {
+  font-size: 30rpx;
+  background: white;
+}
+
+.scheduledView {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* padding-top: 20rpx;
+  padding-bottom: 30rpx; */
+  background: white;
+  height: auto;
+  width: auto;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  padding-top: 10rpx;
+  padding-bottom: 30rpx;
+}
+
+.estimeateView {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* padding-top: 20rpx;
+  padding-bottom: 30rpx; */
+  background: white;
+  height: auto;
+  width: auto;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  padding-top: 10rpx;
+  padding-bottom: 50rpx;
+}
+
+.estimateText_left {
+  font-size: 40rpx;
+  font: bold;
+  position: fixed;
+  left: 40rpx;
+}
+
+.estimateText_right {
+  font-size: 40rpx;
+  font: bold;
+  position: fixed;
+  right: 40rpx;
+}
+
+.terminalView {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* padding-top: 20rpx;
+  padding-bottom: 30rpx; */
+  background: white;
+  height: auto;
+  width: auto;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  padding-top: 10rpx;
+  padding-bottom: 80rpx;
+}
+
+.terminalText_left {
+  color: white;
+  font-size: 20rpx;
+  font: bold;
+  position: fixed;
+  background: goldenrod;
+  left: 40rpx;
+  padding: 10rpx;
+}
+
+.terminalText_right {
+  color: white;
+  font-size: 20rpx;
+  font: bold;
+  position: fixed;
+  right: 40rpx;
+  background: goldenrod;
+  padding: 10rpx;
+}
+
+
