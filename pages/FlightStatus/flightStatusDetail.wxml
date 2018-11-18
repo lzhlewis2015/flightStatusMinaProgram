@@ -8,18 +8,17 @@
 
   <!-- tabbar -->
 
-  <scroll-view class="scroll-view_H" scroll-x style="width: 100%; margin-bottom: 30rpx;"  >
+  <scroll-view class="scroll-view_H" scroll-x style="width: 100%; margin-bottom: 30rpx;" scroll-into-view="dateView{{selectedIndex}}" >
     <block wx:for="{{dateStrings}}" wx:key="index" >
-      <view class='scroll-view-item_H'>
+      <view class='scroll-view-item_H' bindtap='selectDate' data-index='{{index}}' id='dateView{{index}}' >
         <view class='dateWholeView'>
-
           <view class='dateView'>
             <text class='dateText'>{{item}}</text>
             <view class='dottedView'> </view>
           </view>
 
-          <view wx:if="{{index != 0}}" style='background: lightgray' class='bottomDashView'></view>
-          <view wx:if="{{index == 0}}" style='background: goldenrod' class='bottomDashView'></view>
+          <view wx:if="{{index != selectedIndex}}" style='background: lightgray' class='bottomDashView'></view>
+          <view wx:if="{{index == selectedIndex}}" style='background: goldenrod' class='bottomDashView'></view>
         </view>
         </view>
     </block>
