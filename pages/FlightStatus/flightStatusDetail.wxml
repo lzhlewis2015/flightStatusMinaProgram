@@ -8,7 +8,7 @@
 
   <!-- tabbar -->
 
-  <scroll-view class="scroll-view_H" scroll-x style="width: 100%; margin-bottom: 30rpx;" scroll-into-view="dateView{{selectedIndex}}" >
+  <scroll-view class="scroll-view_H" scroll-x style="width: 100%; margin-bottom: 30rpx;" scroll-into-view="dateView{{selectedIndex}}" scroll-with-animation="true" >
     <block wx:for="{{dateStrings}}" wx:key="index" >
       <view class='scroll-view-item_H' bindtap='selectDate' data-index='{{index}}' id='dateView{{index}}' >
         <view class='dateWholeView'>

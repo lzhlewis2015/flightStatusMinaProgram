@@ -21,13 +21,9 @@ Page({
     that.setData({
       selectedIndex: e.currentTarget.dataset.index
     })
-    this.toView();
     console.log('选中的index = ' + this.data.selectedIndex);
   },
 
-  toView: function (e) {
-    console.log('here');
-  },
 
   /**
    * 生命周期函数--监听页面加载
