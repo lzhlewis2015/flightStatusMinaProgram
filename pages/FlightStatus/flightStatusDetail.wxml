@@ -3,19 +3,25 @@
   <view class='navBar'>
     <image src='../../resouce/general_back_button.png' class='backArrowButton'></image>
     <text class='horizontalText'> Flight status</text>
-
+    <text class='horizontalText'>      </text>
   </view>
 
   <!-- tabbar -->
 
-  <scroll-view class="scroll-view_H" scroll-x style="width: 100%">
-    <block wx:for="{{dateStrings}}">
+  <scroll-view class="scroll-view_H" scroll-x style="width: 100%; margin-bottom: 30rpx;"  >
+    <block wx:for="{{dateStrings}}" wx:key="index" >
       <view class='scroll-view-item_H'>
-        <view class='dateView'>
-          <text>{{item}}</text>
-          <!-- <image class='dottedImage' src='../../resouce/dotted_line.png' ></image> -->
+        <view class='dateWholeView'>
+
+          <view class='dateView'>
+            <text class='dateText'>{{item}}</text>
+            <view class='dottedView'> </view>
+          </view>
+
+          <view wx:if="{{index != 0}}" style='background: lightgray' class='bottomDashView'></view>
+          <view wx:if="{{index == 0}}" style='background: goldenrod' class='bottomDashView'></view>
         </view>
-      </view>
+        </view>
     </block>
   </scroll-view>
 
@@ -38,12 +44,17 @@
     <text class='destDetailText'> Hong Kong Int'l </text>
   </view>
 
-  <image class='horizontalDottedImage' src='../../resouce/horizontal_dotted_line.png'></image>
-  <view class='flightNumberView'>
-    <text class='flghtNumberText'> CX 254 </text> 
-    
+  <view class='horizontalDottedView'>
+    <image class='horizontalDottedImage' src='../../resouce/horizontal_dotted_line.png'></image>
   </view>
-  <image class='horizontalDottedImage' src='../../resouce/horizontal_dotted_line.png'></image>
+
+  <view class='flightNumberView'>
+    <text class='flghtNumberText'> CX 254 </text>
+
+  </view>
+  <view class='horizontalDottedView'>
+    <image class='horizontalDottedImage' src='../../resouce/horizontal_dotted_line.png'></image>
+  </view>
 
 
   <view style='padding-top: 30rpx' class='scheduledView'>
@@ -56,7 +67,7 @@
     <text class='destDetailText'> Mon 12 Nov </text>
   </view>
 
-   <view class='scheduledView'>
+  <view class='scheduledView'>
     <text class='originDetailText'> 22:05 </text>
     <text class='destDetailText'> 18:00 </text>
   </view>
@@ -67,12 +78,12 @@
   </view>
 
   <view class='estimeateView'>
-    <text class='estimateText_left' > 22:05 </text>
+    <text class='estimateText_left'> 22:05 </text>
     <text class='estimateText_right'> 18:00 </text>
   </view>
 
   <view class='terminalView'>
-    <text class='terminalText_left' > TERMINAl3 </text>
+    <text class='terminalText_left'> TERMINAl3 </text>
     <text class='terminalText_right'> TERMINAL1 </text>
   </view>
-</view>
+  </view>

@@ -8,26 +8,22 @@
 
 .navBar {
   height: 100rpx;
-  width: 100%;
   background: rgb(36, 153, 32);
   /* padding: 0 40rpx; */
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .backArrowButton {
   height: 50rpx;
   width: 50rpx;
-  position: fixed;
-  left: 20rpx;
+  margin-left: 20rpx;
 }
 
 .horizontalText {
-  height: 50rpx;
-  width: auto;
-}
+ align-items: center;
+ }
 
 /* date pick */
 .scroll-view_H{
@@ -35,28 +31,59 @@
   white-space: nowrap;
 }
 .scroll-view-item_H{
-  width: 150px;
-  height: 40px;
+  width: auto;
+  height: 100rpx;
   display: inline-block;
   align-content: center;
 }
 
+.dateWholeView {
+  height: 100rpx;
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  background: white;
+}
+
+.bottomDashView {
+  background: lightgray;
+  width: 100%;
+  height: 5rpx;
+}
 .dateView {
   height: 100rpx;
-  width: 100%;
+  width: auto;
   /* padding: 0 40rpx; */
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
+}
+
+.dateText {
+  margin-left: 20rpx;
+  height: auto;
+  width: auto;
+}
+
+.dottedView {
+  border-right: 1px dotted lightgrey;
+  height: 60rpx;
+  width: 20rpx;
+  display: flex;
+  align-self: center;
   justify-content: center;
+}
+
+.reverseView {
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .dottedImage {
   height: 100rpx;
   width: 1 rpx;
-  /* padding: 0 40rpx; */
-  display: flex;
-  padding-right: 1rpx;
+  align-self: flex-end;
 }
 
 
@@ -75,6 +102,14 @@
   font-size: 30rpx;
 }
 
+.flightInfoCard {
+  background: #FFF;
+  display: flex;
+  flex-direction: column;
+
+}
+
+
 .odView {
   background: #FFF;
   padding-top: 30rpx;
@@ -85,20 +120,18 @@
   margin-left: 20rpx;
   margin-right: 20rpx;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 
 }
 
 .originText {
   font-size: 60rpx;
-  position: fixed;
-  left: 40rpx;
+  margin-left: 20rpx;
 }
 
 .destText {
   font-size: 60rpx;
-  position: fixed;
-  right: 40rpx;
+  margin-right: 20rpx;
 }
 
 .midImage {
@@ -108,14 +141,12 @@
 
 .originDetailText {
   font-size: 20rpx;
-  position: fixed;
-  left: 40rpx;
+  margin-left: 20rpx;
 }
 
 .destDetailText {
   font-size: 20rpx;
-  position: fixed;
-  right: 40rpx;
+  margin-right: 20rpx;
 }
 
 .flghtNumberContainer {
@@ -132,30 +163,30 @@
 }
 
 .horizontalDottedView {
+  height: 10rpx;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  width: auto;
   margin-left: 20rpx;
   margin-right: 20rpx;
-  height: 1rpx;
-  padding-top: 20rpx;
-  background: rgb(196, 93, 93);
-  
+  background: white;
 }
+
+
 
 .horizontalDottedImage {
   height: 3rpx;
-  width: auto;
-  margin-left: 40rpx;
-  margin-right: 40rpx;
-  background: white;
+  flex-basis: 100%;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
 }
 
 .flightNumberView {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding-top: 20rpx;
-  padding-bottom: 30rpx;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
   background: #FFF;
   height: auto;
   margin-left: 20rpx;
@@ -170,22 +201,23 @@
 .scheduledView {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   /* padding-top: 20rpx;
   padding-bottom: 30rpx; */
+  
   background: white;
   height: auto;
   width: auto;
   margin-left: 20rpx;
   margin-right: 20rpx;
   padding-top: 10rpx;
-  padding-bottom: 30rpx;
+ 
 }
 
 .estimeateView {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   /* padding-top: 20rpx;
   padding-bottom: 30rpx; */
   background: white;
@@ -194,27 +226,25 @@
   margin-left: 20rpx;
   margin-right: 20rpx;
   padding-top: 10rpx;
-  padding-bottom: 50rpx;
+  
 }
 
 .estimateText_left {
   font-size: 40rpx;
   font: bold;
-  position: fixed;
-  left: 40rpx;
+  margin-left: 20rpx;
 }
 
 .estimateText_right {
   font-size: 40rpx;
   font: bold;
-  position: fixed;
-  right: 40rpx;
+  margin-right: 20rpx;
 }
 
 .terminalView {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   /* padding-top: 20rpx;
   padding-bottom: 30rpx; */
   background: white;
@@ -224,26 +254,25 @@
   margin-right: 20rpx;
   padding-top: 10rpx;
   padding-bottom: 80rpx;
+  
 }
 
 .terminalText_left {
   color: white;
   font-size: 20rpx;
   font: bold;
-  position: fixed;
   background: goldenrod;
-  left: 40rpx;
   padding: 10rpx;
+  margin-left: 20rpx
 }
 
 .terminalText_right {
   color: white;
   font-size: 20rpx;
   font: bold;
-  position: fixed;
-  right: 40rpx;
   background: goldenrod;
   padding: 10rpx;
+  margin-right: 20rpx;
 }
 
 

@@ -7,10 +7,10 @@ Page({
   data: {
     dateStrings: [
       'Today (10 Nov)',
-      'Today (11 Nov)',
-      'Today (12 Nov)',
-      'Today (13 Nov)',
-      'Today (14 Nov)'
+      'Wednesday (11 Nov)',
+      'Thursday (12 Nov)',
+      'Friday (13 Nov)',
+      'Saturday (14 Nov)'
     ]
   },
 
