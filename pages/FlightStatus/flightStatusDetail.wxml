@@ -13,8 +13,8 @@
       <view class='scroll-view-item_H' bindtap='selectDate' data-index='{{index}}' id='dateView{{index}}' >
         <view class='dateWholeView'>
           <view class='dateView'>
-            <text wx:if="{{index != selectedIndex}}"  class='dateText' style='color: rgb(15, 116, 143)'>{{item}}</text>
-             <text wx:if="{{index == selectedIndex}}"  class='dateText' style='color: rgb(76, 76, 76)'>{{item}}</text>
+            <text wx:if="{{index != selectedIndex}}"  class='dateText' style='color: rgb(15, 116, 143) '>{{item}}</text>
+             <text wx:if="{{index == selectedIndex}}"  class='dateText' style='color: rgb(76, 76, 76); font-weight: bold;'>{{item}}</text>
             <view class='dottedView'> </view>
           </view>
 

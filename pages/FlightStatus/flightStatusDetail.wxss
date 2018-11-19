@@ -67,7 +67,8 @@
   margin-left: 20rpx;
   height: auto;
   width: auto;
-  color: rgb(15, 116, 143)
+  color: rgb(15, 116, 143);
+  font-weight: normal;
   }
 
 .dottedView {
