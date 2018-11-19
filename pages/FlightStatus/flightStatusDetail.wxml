@@ -3,7 +3,7 @@
   <view class='navBar'>
     <image src='../../resouce/general_back_button.png' class='backArrowButton'></image>
     <text class='horizontalText'> Flight status</text>
-    <text class='horizontalText'>      </text>
+    <text class='horizontalText'></text>
   </view>
 
   <!-- tabbar -->
@@ -13,7 +13,8 @@
       <view class='scroll-view-item_H' bindtap='selectDate' data-index='{{index}}' id='dateView{{index}}' >
         <view class='dateWholeView'>
           <view class='dateView'>
-            <text class='dateText'>{{item}}</text>
+            <text wx:if="{{index != selectedIndex}}"  class='dateText' style='color: rgb(15, 116, 143)'>{{item}}</text>
+             <text wx:if="{{index == selectedIndex}}"  class='dateText' style='color: rgb(76, 76, 76)'>{{item}}</text>
             <view class='dottedView'> </view>
           </view>
 
@@ -26,7 +27,7 @@
 
   <!-- flight tips -->
   <view class='timeDepartedView'>
-    <text class='detailText'> Not yet departed</text>
+    <text class='detailTextBold'> Not yet departed</text>
     <text class='detailText'> This flight due to depart at 22:05 on Sun 11Nov</text>
   </view>
 
@@ -38,7 +39,7 @@
   </view>
 
   <!-- od Detail view -->
-  <view class='odView' style='padding-bottom: 40rpx;'>
+  <view class='odView' style='padding-bottom: 40rpx; padding-top: 0rpx'>
     <text class='originDetailText'> Heathrow </text>
     <text class='destDetailText'> Hong Kong Int'l </text>
   </view>
@@ -57,23 +58,23 @@
 
 
   <view style='padding-top: 30rpx' class='scheduledView'>
-    <text class='originDetailText'> SCHEDULED </text>
-    <text class='destDetailText'> SCHEDULED </text>
+    <text class='originDetailTextGrey'> SCHEDULED </text>
+    <text class='destDetailTextGrey'> SCHEDULED </text>
   </view>
 
   <view class='scheduledView'>
-    <text class='originDetailText'> Sun 11 Nov </text>
-    <text class='destDetailText'> Mon 12 Nov </text>
+    <text style='font-size: 30rpx' class='originDetailText'> Sun 11 Nov </text>
+    <text style='font-size: 30rpx' class='destDetailText'> Mon 12 Nov </text>
   </view>
 
   <view class='scheduledView'>
-    <text class='originDetailText'> 22:05 </text>
-    <text class='destDetailText'> 18:00 </text>
+    <text style='font-size: 30rpx' class='originDetailText'> 22:05 </text>
+    <text style='font-size: 30rpx' class='destDetailText'> 18:00 </text>
   </view>
 
   <view class='scheduledView'>
-    <text class='originDetailText'> ESTIMATED </text>
-    <text class='destDetailText'> ESTIMATED </text>
+    <text class='originDetailTextGrey'> ESTIMATED </text>
+    <text class='destDetailTextGrey'> ESTIMATED </text>
   </view>
 
   <view class='estimeateView'>
@@ -84,5 +85,13 @@
   <view class='terminalView'>
     <text class='terminalText_left'> TERMINAl3 </text>
     <text class='terminalText_right'> TERMINAL1 </text>
+  </view>
+
+  <!-- latest statu view -->
+
+  <view style='flex:1' class='latestStatusView'>
+  
+    <text class='latestStatusText' > Latest flight status received </text>
+     <text class='latestStatusText'> 11 Nov 12:45 (GMT+ 8) </text>
   </view>
   </view>

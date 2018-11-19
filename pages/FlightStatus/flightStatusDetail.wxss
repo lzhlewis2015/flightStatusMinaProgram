@@ -8,7 +8,7 @@
 
 .navBar {
   height: 100rpx;
-  background: rgb(36, 153, 32);
+  background: rgb(0, 101, 100);
   /* padding: 0 40rpx; */
   display: flex;
   align-items: center;
@@ -23,6 +23,8 @@
 
 .horizontalText {
  align-items: center;
+ color: #FFF;
+
  }
 
 /* date pick */
@@ -61,10 +63,12 @@
 }
 
 .dateText {
+  font-size: 30rpx ;
   margin-left: 20rpx;
   height: auto;
   width: auto;
-}
+  color: rgb(15, 116, 143)
+  }
 
 .dottedView {
   border-right: 1px dotted lightgrey;
@@ -94,12 +98,23 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #9ad6b3
+  background: rgb(207, 222, 215)
 
 }
 
-.detailText {
+.detailTextBold {
   font-size: 30rpx;
+  color: rgb(0, 101, 100);
+  font-weight: bold;
+  margin-top: 10rpx;
+}
+
+.detailText {
+  font-size: 25rpx;
+  color: rgb(0, 101, 100);
+  font-weight: normal;
+  margin-bottom: 10rpx;
+  
 }
 
 .flightInfoCard {
@@ -112,8 +127,7 @@
 
 .odView {
   background: #FFF;
-  padding-top: 30rpx;
-  padding-bottom: 10rpx;
+  padding-top: 20rpx;
   display: flex;
   flex-direction: row;
   height: auto;
@@ -139,6 +153,12 @@
   width: 40rpx;
 }
 
+.originDetailTextGrey {
+  font-size: 20rpx;
+  margin-left: 20rpx;
+  color: rgb(153, 153, 153)
+}
+
 .originDetailText {
   font-size: 20rpx;
   margin-left: 20rpx;
@@ -147,6 +167,12 @@
 .destDetailText {
   font-size: 20rpx;
   margin-right: 20rpx;
+}
+
+.destDetailTextGrey {
+  font-size: 20rpx;
+  margin-right: 20rpx;
+  color: rgb(153, 153, 153)
 }
 
 .flghtNumberContainer {
@@ -201,17 +227,14 @@
 .scheduledView {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  /* padding-top: 20rpx;
-  padding-bottom: 30rpx; */
-  
+  justify-content: space-between;  
   background: white;
   height: auto;
   width: auto;
   margin-left: 20rpx;
   margin-right: 20rpx;
   padding-top: 10rpx;
- 
+  
 }
 
 .estimeateView {
@@ -252,7 +275,7 @@
   margin-left: 20rpx;
   margin-right: 20rpx;
   padding-top: 10rpx;
-  padding-bottom: 80rpx;
+  padding-bottom: 30rpx;
   
 }
 
@@ -260,7 +283,7 @@
   color: white;
   font-size: 20rpx;
   font: bold;
-  background: goldenrod;
+  background: rgb(142, 133, 115);
   padding: 10rpx;
   margin-left: 20rpx
 }
@@ -269,9 +292,26 @@
   color: white;
   font-size: 20rpx;
   font: bold;
-  background: goldenrod;
+  background: rgb(142, 133, 115);
   padding: 10rpx;
   margin-right: 20rpx;
+}
+
+/* bottom last update view */
+.latestStatusView {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30rpx;
+}
+
+.latestStatusText {
+  color: rgb(76, 76, 76);
+  font-size: 22rpx;
+}
+
+page {
+  height: 100%;
 }
 
 
